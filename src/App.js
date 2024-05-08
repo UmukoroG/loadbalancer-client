@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+import ServerList from './DisplayServers';
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         />
         <button type="submit">Submit</button>
       </form>
+      <ServerList/>
     </div>
   );
 }
