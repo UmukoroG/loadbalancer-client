@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ServerCard from './serverCard';
 
-function ServerList({server}) {
+function ServerList() {
   // State to store the list of servers
   const [servers, setServers] = useState([]);
 
@@ -27,11 +27,10 @@ function ServerList({server}) {
   return (
     <div style={{ display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap' }}>
       {servers.map(server => (
-        <ServerCard key={server.id} server={server}/>
+        <ServerCard key={server.id} server={server} />
       ))}
     </div>
   );
-
 }
 
 export default ServerList;
